@@ -3,17 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar sesion</title>
+    <title>Presupuesto</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
 </head>
 <body>
-    <form>
-        <label for="user">Usuario: </label>
-        <input type="text" id="user"></input>
-
-        <label for="passwd">Contraseña: </label>
-        <input type="password" id="passwd"></input>
-
-        <input type="button"></input>
-    </form>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Presupuesto</ion-title>
+    </ion-header>
+    <ion-content class="ion-padding">
+        <ion-item>
+            <ion-input
+             label-placement="stacked"
+             clear-input="true"
+             id="tipo-gasto">
+                <div slot ="label">Tipo de gasto <ion-text color="danger">(Requerido)</ion-text></div>
+            </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-input type="number" label-placement="stacked" id ="monto-gasto">
+                <div slot ="label">Monto <ion-text color="danger">(Requerido)</ion-text></div>
+            </ion-input>
+        </ion-item>
+        <ion-grid>
+            <ion-row class = "ion-align-items-center">
+                <ion-col class ="ion-text-center">
+                    <ion-button color ="success" onclick="getValues()">Guardar</ion-button>
+                </ion-col>
+            </ion-row>
+            <ion-row class = "ion-align-items-center">
+                <ion-col class ="ion-text-center">
+                    <p>
+                        <div>Total:</div> 
+                        <div id="total" >0</div>
+                    </p>
+                    
+                    <p id="resultados"></p>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-content>
+    <script src ="script.js"></script>
 </body>
 </html>
