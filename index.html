@@ -6,46 +6,43 @@
     <title>Presupuesto</title>
 
     <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
-<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-    <ion-header>
-        <ion-toolbar>
-            <ion-title>Presupuesto</ion-title>
-    </ion-header>
-    <ion-content class="ion-padding">
-        <ion-item>
-            <ion-input
-             label-placement="stacked"
-             clear-input="true"
-             id="tipo-gasto">
-                <div slot ="label">Tipo de gasto <ion-text color="danger">(Requerido)</ion-text></div>
-            </ion-input>
-        </ion-item>
-        <ion-item>
-            <ion-input type="number" label-placement="stacked" id ="monto-gasto">
-                <div slot ="label">Monto <ion-text color="danger">(Requerido)</ion-text></div>
-            </ion-input>
-        </ion-item>
-        <ion-grid>
-            <ion-row class = "ion-align-items-center">
-                <ion-col class ="ion-text-center">
-                    <ion-button color ="success" onclick="getValues()">Guardar</ion-button>
-                </ion-col>
-            </ion-row>
-            <ion-row class = "ion-align-items-center">
-                <ion-col class ="ion-text-center">
-                    <p>
-                        <div>Total:</div> 
-                        <div id="total" >0</div>
-                    </p>
-                    
-                    <p id="resultados"></p>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
-    </ion-content>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="12" size-md="3">1</ion-col>
+            <ion-col size="12" size-md="3">2</ion-col>
+            <ion-col size="12" size-md="3">3</ion-col>
+            <ion-col size="12" size-md="3">4</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col>1</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="12" size-md="1">01</ion-col>
+            <ion-col size="12" size-md="1">02</ion-col>
+            <ion-col size="12" size-md="1">03</ion-col>
+            <ion-col size="12" size-md="1">04</ion-col>
+            <ion-col size="12" size-md="1">05</ion-col>
+            <ion-col size="12" size-md="1">06</ion-col>
+            <ion-col size="12" size-md="1">07</ion-col>
+            <ion-col size="12" size-md="1">08</ion-col>
+            <ion-col size="12" size-md="1">09</ion-col>
+            <ion-col size="12" size-md="1">10</ion-col>
+            <ion-col size="12" size-md="1">11</ion-col>
+            <ion-col size="12" size-md="1">12</ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size-md ="6" size="12">1</ion-col>
+            <ion-col size-md ="2" size="12">2</ion-col>
+            <ion-col size-md ="3" size="12">3</ion-col>
+            <ion-col size-md ="1" size="12">4</ion-col>
+        </ion-row>
+    </ion-grid>
     <script src ="script.js"></script>
 </body>
 </html>
